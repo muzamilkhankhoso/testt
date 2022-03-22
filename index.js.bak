@@ -11,9 +11,6 @@ import usersRoutes from "./routes/usersRoutes.js"
 import AuthenticationRoute from "./routes/authenticationRoutes.js"
 import IncidentRoutes from "./routes/incidentRoutes.js"
 import homeRoutes from "./routes/homeRoutes.js"
-import favtPlacesRoutes from "./routes/favtPlaceRoutes.js"
-import dailyPlanRoutes from "./routes/dailyPlanRoutes.js"
-
 
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';//
@@ -46,9 +43,6 @@ app.use("/api/Authentication", AuthenticationRoute)
 app.use("/api/users", usersRoutes)
 app.use("/api/incident", IncidentRoutes)
 app.use("/api/home", homeRoutes)
-app.use("/api/places", favtPlacesRoutes)
-app.use("/api/dailyplans", dailyPlanRoutes)
-
 
 //Backend
 
